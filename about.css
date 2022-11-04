@@ -1,0 +1,26 @@
+.aboutwrapper {
+    margin: 10px;
+}
+
+.imgcontainer {
+
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) {
+    .aboutwrapper {
+        margin: 20px auto;
+        width: 95%;
+
+    }
+
+    .imgcontainer {
+        margin: 40px auto;
+    }
+
+    .aboutcontainer {
+        width: 60%;
+    }
+
+
+  }
