@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Malvinew';
+  src: url('FONTS/Malvinew-RpGzM.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Consola';
+  src: url('FONTS/consolas/CONSOLA.TTF') format('truetype');
+}
+
+* {
+  font-size: 1em;
+  box-sizing: border-box;
+  cursor: default;
+  font-family: 'Consola', cursive;
+  color: white;
+}
+
+/* basestyles */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-family: 'Malvinew';
+  font-size: 2.5em;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: center; */
+}
+
+/* FRONTPAGE */
+
+.frontpage {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.imgcontainer {
+  margin: 0 auto;
+  width: 60%;
+  height: 50vh;
+  overflow: hidden;
+  border: 2px solid red;
+  border-style: dashed;
+  border-radius: 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#img {
+  margin: 0 auto;
+  /* padding: 10px; */
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+.nav {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.navbutton {
+  padding: 10px;
+}
+
+/* AGENDA */
+
+.agendawrapper {
+  height: 100vh;
+  width: 95%;
+  margin: auto;
+}
+
+.agenda {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.agendatitle {
+  text-align: center;
+}
+
+.agendaitem {
+  flex: 0 1 40%;
+  border: 1px solid red;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.agendaimg {
+  width: 90%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+}
+
+.agendainfo {
+  margin: 10px;
+
+}
+
+.agendalink {
+
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) {
+
+  /* homepage */
+  .imgcontainer {
+    width: 40%;
+    height: 60vh;
+  }
+
+  /* agenda */
+
+  .agendawrapper {
+    width: 80%;
+  }
+
+  .agendaitem {
+    flex: 0 1 30%;
+    margin: 10px;
+  }
+}

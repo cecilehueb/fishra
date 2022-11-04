@@ -1,0 +1,21 @@
+const image = document.getElementById("img");
+let currentPos = 0;	
+let images = [
+	"randomimg/photo01.jpeg",
+    "randomimg/photo02.jpeg"
+]
+
+	// defines a function and calls every 1 second
+var loop;
+function imageLoop() {
+	loop = setInterval(getRandomImage, 4000);
+}
+
+imageLoop();
+	
+	// loops trough list of images
+function getRandomImage(){
+	if (++currentPos >= images.length)
+        currentPos = 0;
+		image.src = images[currentPos];
+}

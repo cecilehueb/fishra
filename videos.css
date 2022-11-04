@@ -1,0 +1,24 @@
+.videowrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.videocontainer {
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) {
+    .videowrapper {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: 20px 0 0 0;
+        
+    }
+
+    .videocontainer {
+        flex: 0 1 30%;
+    }
+  }
