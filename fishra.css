@@ -39,17 +39,52 @@ h1 {
   font-size: 1.2em;
 }
 
+.red {
+  color: red;
+}
+
+.special {
+  padding: 20px;
+  border: 1px dashed red;
+}
+
+.specialnopadding {
+  border: 1px dashed red;
+}
 
 body {
   margin: 0;
   background-color: #000000;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 
 .wrapper {
   display: flex;
   flex-flow: column nowrap;
+  margin: 10px;
   /* justify-content: center; */
+}
+
+.arrowback {
+  font-size: 1em;
+  position: relative;
+  border-right: 1px dashed red;
+  /* background-color: red; */
+  /* margin: 10px; */
+  padding: 10px;
+}
+
+.arrowback:hover {
+  background-color: red;
+}
+
+.arrowback > div {
+  position: sticky;
+  top: 50vh;
+  color: red;
+
 }
 
 /* FRONTPAGE */
@@ -59,6 +94,8 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  margin: auto;
+  width: 80%;
 }
 
 .title {

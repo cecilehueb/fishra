@@ -3,23 +3,14 @@ img {
 }
 
 /* writehome */
-.red {
-    color: red;
-}
-.writehome {
-    height: 100vh;
-    width: 80%;
+.menu {
     margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start;
 }
-
 .writeitem {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    margin: 0 auto;
 }
 
 .writeimg {
@@ -35,14 +26,14 @@ img {
 .chapter {
     display: flex;
     flex-flow: column nowrap;
-    margin: 10px;
+    margin: 10px 10px 10% 10px;
     align-items: flex-start;
     position: relative;
 }
 
 .chaptertitle {
     padding: 10px;
-    border: 2px dotted red;
+    border: 2px dashed red;
     position: sticky;
     top: 3%;
     left: 0px;
@@ -55,54 +46,67 @@ img {
     margin: 0 3%;
 }
 
+.doublecol {
+    margin: 0 3%;
+}
+
 .subchapter {
     margin-bottom: 50px;
 }
 
-.special {
-    padding: 20px;
-    border: 1px dashed red;
+.imgrow {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /* MEDIA QUERIES */
 @media (min-width: 600px) {
 
-    /* .wrapper {
-        width: 85%;
-        margin: auto;
-    } */
+    .wrapper {
 
-    /* home */
-    .writehome {
-        width: 40%;
     }
 
+    /* home */
+
     .writeitem {
-        
     }
 
     /* chapters */
 
+    .chapter {
+        width: 70%;
+    }
+
     .chaptertitle {
-        transform-origin: bottom left;
-        transform: rotate(90deg);
+        /* transform-origin: bottom left;
+        transform: rotate(90deg); */
     }
 
     .singlecol {
-        margin-left: 10%;
-        width: 60%;
+        /* margin-left: 10%; */
+        
     }
     .doublecol {
    
         column-count: 2;
         column-width: 50%;
+        column-gap: 3em;
+        /* margin-left: 10%; */
     }
 
     .subchapter {
         -webkit-column-break-inside: avoid;
         page-break-inside: avoid; /* Firefox is dumb */
         break-inside: avoid;
-        padding: 20px;
-        margin: 20px;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+
+    .imgrow {
+        flex-flow: row wrap;
+    }
+
+    .imgrow > img {
+        flex: 0 1 50%;
     }
   }

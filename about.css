@@ -1,6 +1,10 @@
-.aboutwrapper {
+.contacts {
     margin: 10px;
 }
+
+.contacts> span{
+    margin-right: 30px;
+} 
 
 .imgcontainer {
 
