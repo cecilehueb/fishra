@@ -1,0 +1,3 @@
+gebruiksersnaam: 585549
+hostnaam: sftp.fishra.net
+wachtwoord: Oldavocado123!
